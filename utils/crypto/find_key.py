@@ -4,7 +4,7 @@ from Crypto.Cipher import AES
 # make sure you pad the key using '\x20' to make it 16 bytes
 
 #word = 10*'a' # this is read from the word list!
-word = 'median'
+word = 10*'a'
 padsize = 16 - len(word) # this is determined by the word size
 key = word + padsize*'\x20'
 IV = 16 * '\x00'           
