@@ -71,6 +71,7 @@ def decrypt_file(key, in_filename, out_filename=None, chunksize=24*1024):
 
 
 def main():
+    # test to encrypt & decrypt a file
     in_file = 'simple_aes.py'
     key = 16*'0'
     encrypt_file(key, in_file, None, 1024)

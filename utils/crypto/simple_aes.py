@@ -1,7 +1,8 @@
 from Crypto.Cipher import AES
 
-key = '0123456789abcdef'
-IV = 16 * '\x00'           # Initialization vector: discussed later
+key = '0123456789abcdef' # a multiple of 16
+# '\x00' is treated as bytes rather than str
+IV = 16 * '\x00'           
 mode = AES.MODE_CBC
 encryptor = AES.new(key, mode, IV=IV)
 
