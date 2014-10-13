@@ -1,3 +1,7 @@
+"""
+Modify this script to suit your needs
+"""
+
 import os, random, struct
 from Crypto.Cipher import AES
 
