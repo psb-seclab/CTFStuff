@@ -1,11 +1,11 @@
 from Crypto.Cipher import AES
-import os, random, struct
 
 # you may modify this script to accomplish drill 21
 # make sure you pad the key using '\x20' to make it 16 bytes
 
-word = 10*'a' # this is read from the word list!
-padsize = 6 # this is determined by the word size
+#word = 10*'a' # this is read from the word list!
+word = 'median'
+padsize = 16 - len(word) # this is determined by the word size
 key = word + padsize*'\x20'
 IV = 16 * '\x00'           
 mode = AES.MODE_CBC
