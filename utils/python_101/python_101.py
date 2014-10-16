@@ -2,6 +2,7 @@
 
 #import my_math
 from my_math import factorial
+import os
 #import my_math
 
 
@@ -127,15 +128,29 @@ def test_generator():
 def test_file_io():
 	# write to a file
 	fo = open('testfile', 'wt')
-	for x in range(100):
-		fo.write(str(x)+'\n')
+	for x in range(20):
+		fo.write(str(x) + ',')
 	fo.close()
 	# read from a file
 	fi = open('testfile', 'rt')
 	# read as much as possible at one time!
 	contents = fi.read()
 	print contents
-	
+	list_num = contents.split(',')
+	# read a line at a time
+	# reset file obj position
+	fi.seek(0)
+	for line in fi:
+		print line
+	fi.seek(10)
+	print fi.read(10)
+	# tell the current position
+	print fi.tell()
+	fi.close()
+	# create a dir
+	import os
+	os.mkdir("test_dir")
+	# 
 	return
 
 
