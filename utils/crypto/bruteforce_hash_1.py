@@ -1,5 +1,14 @@
+"""
+problem: flag = ASIS_b6b?244608c2?c2e869cb56?67b64?b1
+There are four ? in the flag to be find out. 
+
+
+"""
+
 import string
 from hashlib import sha256
+
+print [str(hex(x))[-1] for x in range(16) ]
 
 check = '61e18627ead3caaf56c89140e11533491ea3cc7b405d3e4d95bba333860c0acc'
 cnt = 0

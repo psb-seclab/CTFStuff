@@ -1,0 +1,22 @@
+ExifTool Version Number         : 9.74
+File Name                       : favicon.png
+Directory                       : .
+File Size                       : 2.4 kB
+File Modification Date/Time     : 2014:10:17 19:50:08-04:00
+File Access Date/Time           : 2014:10:17 19:54:26-04:00
+File Inode Change Date/Time     : 2014:10:17 19:50:24-04:00
+File Permissions                : rw-r-----
+File Type                       : PNG
+MIME Type                       : image/png
+Image Width                     : 128
+Image Height                    : 128
+Bit Depth                       : 8
+Color Type                      : Palette
+Compression                     : Deflate/Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Gamma                           : 2.2
+SRGB Rendering                  : Perceptual
+Palette                         : (Binary data 672 bytes, use -b option to extract)
+Transparency                    : (Binary data 223 bytes, use -b option to extract)
+Image Size                      : 128x128
