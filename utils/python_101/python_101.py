@@ -296,6 +296,7 @@ def test_list():
 	print index('spam')
 	return
 
+
 def test_str():
 	"""play with string"""
 	str_1 = "hacking is fun"
@@ -312,7 +313,15 @@ def test_str():
 	print str_1[-1]
 	# check a string's hex
 	print str_1.encode('hex')
+	# copy a string
+	str_2 = str_1
+	str_3 = str_1[:-1]
+	print id(str_2) == id(str_1)
+	print id(str_3) == id(str_1)
+	print str_1
+	print str_2
 	return
+
 
 def test_var():
 	a = 5
@@ -345,7 +354,7 @@ def test_var():
 
 if __name__ == "__main__":
     #test_var()
-    #test_str()
+    test_str()
     #test_list()
     #test_dictionary()
     #test_control_flow()
@@ -354,7 +363,7 @@ if __name__ == "__main__":
     #test_generator()
     #test_module()
     #test_io()
-    test_file_io()
+    #test_file_io()
     #test_class()
     #test_exception()
     
