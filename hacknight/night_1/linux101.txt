@@ -1,0 +1,120 @@
+
+# Linux command basics:
+## Legend:
+1. Everything in “<>” is to be replaced, ex: <fileName> --> iLovePeanuts.txt
+2. Don't include the '=' in your commands
+
+## linux folder notation
+/ = root directory
+~ = home directory (for the current user)
+. = current directory
+.. = parent directory
+../.. = parent's parent 
+
+## Basic Terminal Navigation
+ls -a = list all files and folders
+ls <folderName> = list files in folder
+ls -lh = Detailed list, Human readable
+ls -l *.jpg = list jpeg files only
+ls -lh <fileName> = Result for file only
+cd <folderName> = change directory
+cd / = go to root
+cd .. = go up one folder, tip: ../../../
+pwd = print working directory
+man <command> = shows manual (RTFM)
+
+## Basic file manipulation
+cat <fileName> = show content of file
+             (less, more)
+head = from the top
+      -n <#oflines> <fileName>
+tail = from the bottom
+      -n <#oflines> <fileName>
+
+mkdir = create new folder
+mkdir myStuff ..
+mkdir myStuff/pictures/ ..
+
+touch <fileName> = create or update a file
+
+cp image.jpg newimage.jpg = copy and rename a file
+cp image.jpg <folderName>/ = copy to folder
+cp image.jpg folder/sameImageNewName.jpg
+cp -R stuff otherStuff = copy and rename a folder
+cp *.txt stuff/ = copy all of *<file type> to folder
+
+mv file.txt foldername = move file to a folder
+mv <folderName> <folderName2> = rename a folder 
+mv filename.txt filename2.txt = rename a file
+mv <fileName> stuff/newfileName
+
+rm <fileName> = delete file (s)
+rm -i <fileName> .. = ask for confirmation each file 
+rm -f <fileName> = force deletion of a file
+rm -r <foldername>/ = delete folder
+
+'up' key = show the previous cmd
+'down' key = show the next cmd
+
+## open up a file using sublime
+$ sublime <filename>
+
+## Process Management
+ps -A = show all processes
+ps -A | grep 'python' = show processes including word 'python'
+kill <proc#> = kill a process by id
+sudo halt = to shut down computer
+sudo reboot = to reboot
+
+## Flow redirection
+'>' at the end of a command to redirect the result to a file
+$ ps -A > process.txt
+'>>' to redirect the result to the end of a file
+$ ls >> process.txt
+
+## Archive and compress data
+Step 1, put all the files you want to compress in
+the same folder: ex --> mv *.txt folder/
+
+Step 2, Create the tar file:
+tar -cvf my_archive.tar folder/
+      -c : creates a .tar archive
+      -v : tells you what is happening (verbose)
+      -f : assembles the archive into one file
+
+Step 3.1, create gzip file (most current): 
+$ gzip my_archive.tar
+to decompress: 
+$ gunzip my_archive.tar.gz
+
+Step 3.2, or create a bzip2 file (more powerful but slow): 
+$ bzip2 my_archive.tar
+to decompress: 
+$ bunzip2 my_archive.tar.bz2
+
+step 4, to decompress the .tar file:
+$ tar -xvf archive.tar
+
+## Basic Terminal Shortcuts
+CTRL L = Clear the terminal
+CTRL D = Logout
+SHIFT Page Up/Down = Go up/down the terminal
+CTRL A = Cursor to start of line
+CTRL E = Cursor the end of line
+CTRL U = Delete left of the cursor
+CTRL K = Delete right of the cursor
+CTRL W = Delete word on the left
+CTRL Y = Paste (after CTRL U,K or W)
+TAB = auto completion of file or command
+
+
+
+
+
+
+
+
+
+
+
+
