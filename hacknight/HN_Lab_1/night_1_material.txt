@@ -1,4 +1,4 @@
-Night_1 material
+﻿Night_1 material
 
 # Agenda
 ## System setup: 6:30 pm - 6:45 pm
@@ -19,7 +19,7 @@ $ sudo apt-get upgrade
 
 2. Setup Sublime text editor
 2.1 In Kali, open the web browser “Iceweasel”, go to 
-https://drive.google.com/file/d/0Bxv77kaLRO_yYXN5YjZEQmNoRGs/edit?usp=sharing
+ftp://128.118.102.44
 and download a zipped “sublime text” to your “Home” directory! Open terminal, go to Home directory (the default directory)
 2.2 unzip the file using:
 $ unzip sublime.zip
