@@ -1,8 +1,6 @@
 """
 problem: flag = ASIS_b6b?244608c2?c2e869cb56?67b64?b1
 There are four ? in the flag to be find out. 
-
-
 """
 
 import string
