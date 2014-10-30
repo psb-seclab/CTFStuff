@@ -24,8 +24,10 @@ def brutefoce_flag():
 					flag = 'ASIS_b6b'+a+'244608c2'+b+'c2e869cb56'+c+'67b64'+d+'b1'
 					if sha256(sha256(flag).hexdigest()).hexdigest() == check:
 						print 'got the flag = ', flag
+						print 'the four missing digits are:', a, b, c, d
 						return cnt
 
 if __name__ == "__main__":
-	count = brutefoce_flag()
-	print 'tried %d times'%(count)
+	#count = brutefoce_flag()
+	#print 'tried %d times'%(count)
+	pass

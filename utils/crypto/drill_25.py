@@ -1,11 +1,8 @@
 import hashlib
 
-
 pswd_ok = 'pswd_ok.txt'
 pswd_better = 'pswd_better.txt'
 pswd_strong = 'pswd_strong.txt'
-
-
 
 def gen_hash():
 	hash_str = ""
@@ -58,5 +55,5 @@ def hash_myspace_pswd():
 
 if __name__ == '__main__':
 	#gen_hash()
-	hash_myspace_pswd()
+	#hash_myspace_pswd()
 	pass
