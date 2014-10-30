@@ -43,6 +43,20 @@ def gen_hash():
 	pass
 
 
+def hash_myspace_pswd():
+	hash_str = ""
+	with open("pswd_myspace.txt", 'rt') as fi:
+		with open("hash_pswd_myspace.txt", 'wt') as fo:
+			for row in fi:
+				row = row.replace('\n', '')
+				hash_str += hashlib.md5(row).hexdigest() + '\n'
+			fo.write(hash_str)
+
+	fi.close()
+	fo.close()		
+	pass
+
 if __name__ == '__main__':
-	gen_hash()
+	#gen_hash()
+	hash_myspace_pswd()
 	pass
