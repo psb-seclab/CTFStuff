@@ -16,7 +16,28 @@ def gen_hash():
 
 	fo = open('md5_'+pswd_ok, 'wt')
 	fo.write(hash_str)
+	fi.close()
+	fo.close()
 
+	hash_str = ""
+	fi = open(pswd_better, 'rt')
+	for row in fi:
+		row = row.replace('\n', '')
+		hash_str += hashlib.md5(row).hexdigest() + '\n'
+
+	fo = open('md5_'+pswd_better, 'wt')
+	fo.write(hash_str)
+	fi.close()
+	fo.close()
+
+	hash_str = ""
+	fi = open(pswd_strong, 'rt')
+	for row in fi:
+		row = row.replace('\n', '')
+		hash_str += hashlib.md5(row).hexdigest() + '\n'
+
+	fo = open('md5_'+pswd_strong, 'wt')
+	fo.write(hash_str)
 	fi.close()
 	fo.close()
 	pass
