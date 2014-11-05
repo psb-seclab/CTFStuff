@@ -1,0 +1,108 @@
+﻿Agenda
+
+Part I: Review of Linux commands
+Part II: A crash course on Python
+Upcoming topic: website hacking 1 - the basics
+
+==================================
+Part I - Review of Linux command 
+## Start Kali, finish the following tasks in terminal
+1.0 Download the zip file of lab 2, save it in the home directory
+1.1 Go to the home directory
+1.2 Create a new folder named "hack_night"
+1.3 Enter folder "hack_night"
+1.4 Create a folder named "lab1"
+1.5 Copy the zip file from your home dir to the current dir. Note: use ~/ to specify your home dir, and use ./ to specify your current dir. 
+1.6 Unzip the compressed file to the current dir.
+1.7 List all files in the current dir
+1.8 Remove the zip file
+1.9 Rename folder "lab222" to "lab2"
+1.a Enter dir lab2
+1.b Go to the parent folder
+1.c Use the 'up' key to show the last command, hit 'enter' to execute it.  
+1.d Print your current directory, i.e., working directory
+1.e Type 'exit' to close the current terminal.
+
+# open up a new terminal, do the following
+2.0 go to home dir
+2.1 create a new folder named 'test'
+2.2 enter 'test'
+2.3 create a file called 'test.txt' using the 'touch' command
+2.4 open 'test.txt' using sublime
+2.5 write something in the file, save it, then close sublime
+2.6 show the content of the file
+2.7 goto the parent dir
+2.8 create a 'tar' file named 'test.tar' from folder 'test'
+2.9 create a 'gzip' file named 'test.gzip' from 'test.tar'
+2.a remove file 'test.tar' and folder 'test'
+2.b decompress 'test.gzip' to get 'test.tar'
+2.c decompress 'test.tar' to get folder 'test'
+
+# practice command line shortcuts, * means very useful!
+CTRL L = Clear the terminal (*)
+Up/Down = show the last/next command (**)
+CTRL A = Cursor to start of line (*)
+CTRL E = Cursor the end of line
+CTRL U = Delete left of the cursor (*)
+CTRL K = Delete right of the cursor
+CTRL W = Delete word on the left
+CTRL Y = Paste (after CTRL U,K or W)
+TAB = auto completion of file or command (**)
+
+==================================
+Part II - A crash course on Python
+# reference
+http://www.tutorialspoint.com/python/
+
+# To run a python script
+0 - start a terminal
+1 - enter your current working dir where the python script locates. 
+3. run the script:
+$ python xxxx.py
+4. run a script with arguments
+$ python xxx.py [arg list]
+
+# Topics to be covered. 
+0 variables
+1 strings
+2 built-in data structures: list, dictionary
+3 control-flow
+4 loops
+5 function
+6 io
+7 class
+8 list comprehension 
+9 networking
+
+# exercise 
+0 - write a function to generate the ascii table
+check this link: http://www.asciitable.com/ for a complete ascii table
+Your output should be three collumns:
+---------------------
+dec 	hex		char
+0		0		NUL
+...
+---------------------
+note: colloums are separated by '\t'
+
+1 - write a recusive function to do binary search on a sorted list.
+input: a list, the left idx , the right idx, the search key
+output: the position of the match, or -1 if there is no match.
+
+2 - write a python function, do the following:
+- create a file named 'file1.txt' in the working dir.
+- write the whole ascii table you generated to the file.
+- creat another file named 'file2.txt' in the working dir
+- read contents from 'file1.txt' line by line 
+- for each line, replace every '\t' with a ':', then output the result to 'file2.txt'
+
+# python scripts in hacking
+0 - Test script '1-vulnScanner.py', a simple vulnerability scanner. 
+
+
+==================================
+Upcoming topic: website hacking 1 - the basics
+0 - http basics
+
+
+
